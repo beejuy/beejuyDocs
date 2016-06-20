@@ -1,4 +1,4 @@
-## Authentication
+# Authentication
 To secure the API we use HTTP Basic Authentication over SSL. 
 On every request you make to the API you will need to include the header 
 Authorization using the Basic authentication.
