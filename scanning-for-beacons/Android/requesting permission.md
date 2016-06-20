@@ -64,3 +64,8 @@ public void onRequestPermissionsResult(int requestCode,
 	}
 }
 ```
+##How Permission Prompting Works
+
+The code above will first check to see if the location permission has already been granted. If not, it will prompt the user with an AlertDialog, “Please grant location access so this app can detect beacons.” This dialog is not strictly required, but it is recommended to first explain to the user why your app needs the permission. While this message is just an example, you should probably fine tune the verbiage to explain in less technical terms what functional benefit users gets from granting this permission. Otherwise, users will likely deny the permission to keep the app from tracking them.
+
+After presenting this dialog, the system then calls the new Android requestPermissions method that actually does the prompting. Android also provides a callback to the app telling you the result of what the user decided (see the onRequestPermissionResult callback), but it is important to note that users can change their mind later on via settings and turn permissions on or off. In that case, the callback method won’t get notified.
