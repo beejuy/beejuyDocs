@@ -1,4 +1,3 @@
-URL
-======
+#API location
 
-https://api.beejuy.com/
+Our API is located [here](https://api.beejuy.com/)
