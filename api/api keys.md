@@ -6,7 +6,7 @@ Our API authenticates on every request.
 
 To get your API keys, navigate to the [API section](http://cms.beejuy.com/#/app/page/settings) under your user profile
 
-Once you have the keys, follow the instructions in our [API Authentication](../beejuyDocs/api/authentication.md) page.
+Once you have the keys, follow the instructions in our [API Authentication](./authentication.md) page.
 
 ![api keys][APIKEYS]
 
