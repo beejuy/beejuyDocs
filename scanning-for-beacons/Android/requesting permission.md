@@ -1,3 +1,8 @@
 #Requesting Permission
 
 Apps that target SDK 23+ (Android Marshmallow) must also prompt the user for a location permission after the app is launched. If you fail to prompt for and get this permission on apps on apps targeting SDK 23+, you won’t detect beacons in either the background or the foreground. For apps that target SDKS earlier than 23, failing to include these permission in the manifest will cause apps installed on Android 6 devices to fail to scan in the background. In either case where you do not have the proper permissions, you’ll get the following error in LogCat when you try to do a bluetooth scan, and no beacons will be detected:
+
+
+Android Beacon Library versions 2.6 and above already include ```android.permission.ACCESS_COARSE_LOCATION in the manifest, but if you are using an older version of the library, you must add that manually. 
+
+You must also add code like the following to an Activity if your app targets Marshmallow (if you set targetSdkVersion 23):
