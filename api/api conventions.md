@@ -1,4 +1,4 @@
-## API conventions
+# API conventions
 We strive to make it as easy as possible to retrieve offer data from Beejuy and get you up and running in no time.
 
 Here are some rule of thumb items to follow when working with Beejuy's API
